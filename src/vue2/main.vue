@@ -2,7 +2,7 @@
 <div>
   <el-container>
   <el-header>
-    禧云
+    禧云商家中心
   </el-header>
   <el-container>
     <el-aside width="200px">菜单</el-aside>
@@ -20,7 +20,7 @@
 
 
 <script>
-import child from '../vue/main.vue'
+import child from '../vue1/main.vue'
 export default {
   components: {
     child,

@@ -1,26 +1,24 @@
 import Vue from 'vue';
-import singleSpaVue from 'single-spa-vue';
-import 'element-ui/lib/theme-chalk/index.css';
-import ElementUI from 'element-ui';
-Vue.use(ElementUI)
 import main from './main.vue'
-
+import singleSpaVue from 'single-spa-vue';
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
-    el: '#vue2',
+    el: '#vue',
     render: r => r(main)
   } 
 });
 
+// 初始化
 export const bootstrap = [
   vueLifecycles.bootstrap,
 ];
-
+// 加载
 export const mount = [
   vueLifecycles.mount,
 ];
-
+// 卸载
 export const unmount = [
   vueLifecycles.unmount,
 ];
+

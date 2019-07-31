@@ -3,7 +3,7 @@
 
 ### 本地开发
 
-依赖安装： yarn 或者 npm install
+依赖安装： "yarn" 
 
-运行： yarn start
+运行： " yarn start "
 

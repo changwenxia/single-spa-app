@@ -1,6 +1,10 @@
 <template>
   <div>
       <h1 class="text">我是Vue项目</h1>
+      <el-button @click='isShow=true'>click</el-button>
+      <el-dialog :visible.sync="isShow" :before-close="beforeClose">
+        hdskhfa
+      </el-dialog>
       <!-- <one></one> -->
   </div>
 </template>
@@ -16,8 +20,18 @@ export default {
     two,
     isv,
   },
+  data() {
+    return {
+     isShow: false,
+    }
+  },
   mounted(){
-    console.log(this.token)
+    // console.log(this.token)
+  },
+  methods:{
+    beforeClose(){
+      this.isShow = false
+    },
   },
 }
 </script>

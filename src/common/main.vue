@@ -32,7 +32,8 @@
         </el-aside>
         <el-container>
           <el-main>
-            <!-- <router-view></router-view> -->
+            <child></child>
+            <!-- <router-view></!--> 
           </el-main>
 
           <el-footer>底部</el-footer>

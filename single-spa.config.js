@@ -14,11 +14,5 @@ registerApplication(
   () => location.pathname === "/react" ? false : true
 );
 
-// registerApplication(
-//   'react',
-//   () => import('./src/react/main.app.js'),
-//   () => location.pathname === "/vue"  ? false : true
-// );
-
 start();
 
